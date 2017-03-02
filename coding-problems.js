@@ -5,45 +5,33 @@
 /////
 //#1
 //Write a function called `sumArray` that takes in an array (that could contain any type of data) and returns a sum of the numbers in the array.
-const sumArray = (arr) => arr.filter(val => typeof val === 'number').reduce((num1, num2) => num1 + num2);
+const sumArray = () => null;
 
 /////
 //#2
 //Write a function called `sumFirstThree` that takes in an array of numbers, and returns a sum of the first three numbers
-const sumFirstThree = (arr) => arr.reduce((sum, num, indx) => indx < 3 ? sum + num : sum, 0);
+const sumFirstThree = () => null;
 
 /////
 //#3
 // Write a function called 'tripledPlusFive' that takes in array (that could contain any type of data), multiplies each number by 3, then adds 5 to each number, and returns a new array of those numbers
 // for example, tripledPlusFive([1, 2, 3, 'hello', 4, 5]) would return [8, 11, 14, 17, 20]
-const tripledPlusFive = (arr) => arr.filter(val => typeof val === 'number').map(num => num * 3 + 5);
+const tripledPlusFive = () => null;
 
 /////
 //#4
 //Write a function called 'secondHighest' that takes in an array of numbers and returns the second highest number from the array
-const secondHighest = (arr) => {
-  let highest = -Infinity;
-  let secondHighest = -Infinity;
-  arr.forEach(num => {
-    if(num > highest) {
-      secondHighest = highest;
-      highest = num;
-    } else if(num > secondHighest) {
-      secondHighest = num;
-    }
-  });
-  return secondHighest;
-};
+const secondHighest = () => null;
 
 /////
 //#5
 //Write a function called `indexMap` that takes in an array of numbers and returns a new array with each of the original numbers multiplied by their array index.
-const indexMap = (arr) => arr.map((num, indx) => num * indx);
+const indexMap = () => null;
 
 /////
 //#6
 //Write a function `evenNumStrs` that receives an array of strings and numbers and returns an array that only contains the strings from the original array that have an even number of letters.
-const evenNumStrs = (arr) => arr.filter(str => str.length % 2 === 0);
+const evenNumStrs = () => null;
 
 /////
 //#7
@@ -71,14 +59,14 @@ const changeBearPig = () => null;
 // the function should return a string that combines the names of both the cat and dog
 // for example, catDog({cat: 'Garfield', dog: 'Scooby'}) would return 'GarfieldScooby'
 // catDog({cat: 'Simba', dog: 'Snoop'}) would return 'SimbaSnoop'
-const catDog = (obj) => obj.cat + obj.dog;
+const catDog = () => null;
 
 
 /////
 //#9
 //Write a function called `eeee` that takes in a string and returns a new string that replaces every letter from the original string with the letter 'e'
 // for example, eeee('watermelon') would return 'eeeeeeeeee'
-const eeee = (str) => str.split('').map(letter => 'e').join('');
+const eeee = () => null;
 
 /////
 //#10
@@ -105,7 +93,7 @@ function Album(){
 //Write a function called 'firstAndLast' that takes in two strings and returns true if both the first AND last letters of both strings are the same, and returns false if they are not
 // for example, firstAndLast('hello', 'hippo') would return true
 // firstAndLast('hello', 'helicopter') would return false
-const firstAndLast = (str1, str2) => str1[0] === str2[0] && str1[str1.length - 1] === str2[str2.length - 1] ? true : false;
+const firstAndLast = () => null;
 
 /////
 //#13
@@ -113,12 +101,7 @@ const firstAndLast = (str1, str2) => str1[0] === str2[0] && str1[str1.length - 1
 // it should return 'true' if the two arrays are reversed versions of each other. otherwise, it should return false
 // for example, reversed([1, 2, 3], [3, 2, 1]) would return true
 // reversed([1, 2, 3], [1, 3, 2]) would return false
-const reversed = (arr1, arr2) => {
-  for(let i = 0; i < arr1.length; i++) {
-    if(arr1[i] !== arr2[arr2.length - 1 - i]) return false;
-  }
-  return true;
-};
+const reversed = () => null;
 
 /////
 //#14
@@ -127,12 +110,7 @@ const reversed = (arr1, arr2) => {
 // in other words, the new array should be twice as long and have two of each number
 // then, multiply each number in the new array by 2
 // for example, if the original array is [1, 2, 3, 4, 5], the array you return would be [2, 4, 6, 8, 10, 2, 4, 6, 8, 10]
-const doubles = (arr) => {
-  const result = [];
-  arr.forEach(num => result.push(num));
-  arr.forEach(num => result.push(num));
-  return result.map(num => num * 2);
-};
+const doubles = () => null;
 
 
 
