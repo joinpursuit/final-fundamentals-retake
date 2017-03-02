@@ -1,5 +1,5 @@
 const {expect, assert} = require('chai');
-const {sumArray, sumFirstThree, tripledPlusFive, secondHighest, doubles, indexMap, evenNumStrs, eeee, oddsCount, reversed, firstAndLast, Song, Album} = require('../coding-problems');
+const {sumArray, sumFirstThree, tripledPlusFive, secondHighest, doubles, indexMap, evenNumStrs, eeee, catDog, reversed, firstAndLast, Song, Album} = require('../coding-problems');
 
 describe('JavaScript fundamentals final:', () => {
   it('sumArray()', () => {
@@ -11,9 +11,9 @@ describe('JavaScript fundamentals final:', () => {
     expect(test3).equal(-20);
   });
   it('sumFirstThree()', () => {
-    var test1 = sumFirstThree(1, 2, 3, 4);
-    var test2 = sumFirstThree(10, 10, 10, 10);
-    var test3 = sumFirstThree(10, 20, 30, 40, 50, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+    var test1 = sumFirstThree([1, 2, 3, 4]);
+    var test2 = sumFirstThree([10, 10, 10, 10]);
+    var test3 = sumFirstThree([10, 20, 30, 40, 50, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
     expect(test1).equal(6);
     expect(test2).equal(30);
     expect(test3).equal(60);
@@ -49,7 +49,7 @@ describe('JavaScript fundamentals final:', () => {
   it('doubles() ', () => {
     var test1 = doubles([100, 100, 100, 100]);
     var test2 = doubles([50, 40, 33, 6, 12]);
-    expect(test1).eql([200, 200, 200, 200, 200, 200, 200, 200, 200, 200]);
+    expect(test1).eql([200, 200, 200, 200, 200, 200, 200, 200]);
     expect(test2).eql([100, 80, 66, 12, 24, 100, 80, 66, 12, 24]);
   });
   it('eeee() ', () => {
@@ -80,11 +80,11 @@ describe('JavaScript fundamentals final:', () => {
     expect(test1.artist).eql('Childish Gambino');
     expect(test2).eql("Me and Your Mama, Redbone, The Night Me and Your Mama Met");
   });
-  it('oddsCount() ', () => {
-    var test1 = oddsCount([1, 2, 3, 4, 5]);
-    var test2 = oddsCount([1, 1, 1, 1, 1, 2, 2, 2]);
-    expect(test1).eql({odds: 3);
-    expect(test2).eql({odds: 5});
+  it('catDog() ', () => {
+    var test1 = catDog({cat: 'Garfield', dog: 'Scooby'});
+    var test2 = catDog({cat: 'LilBub', dog: 'Lassie'});
+    expect(test1).eql('GarfieldScooby');
+    expect(test2).eql('LilBubLassie');
   });
   it('reversed() ', () => {
     var test1 = reversed([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]);
@@ -92,9 +92,9 @@ describe('JavaScript fundamentals final:', () => {
     var test3 = reversed([1, 2, 3, 4, 5], [3, 4, 5, 2, 1]);
     var test4 = reversed([1, 2, 3], [1, 2, 3]);
     expect(test1).eql(true);
-    expect(test1).eql(true);
-    expect(test2).eql(false);
-    expect(test2).eql(false);
+    expect(test2).eql(true);
+    expect(test3).eql(false);
+    expect(test4).eql(false);
   });
   it('firstAndLast() ', () => {
     var test1 = firstAndLast('cart', 'cataract');
