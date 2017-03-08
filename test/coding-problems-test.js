@@ -107,3 +107,11 @@ describe('JavaScript fundamentals final:', () => {
     expect(test4).equal(false);
   });
 });
+
+
+
+
+
+
+
+
