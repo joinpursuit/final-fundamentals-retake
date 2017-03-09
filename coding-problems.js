@@ -108,19 +108,19 @@ indexMap([2,4,6,7,8])
 // const evenNumStrs = () => null;
 
 function evenNumStrs(arr){
-  var newArray = []
+  var newArray = [];
   var onlyStrings = arr.filter(function(val){
     return typeof val === "string"
   })
-  for(var i; i< onlyStrings; i++){
-    if (onlyString[i].length % 2 === 0){
-      newArray += onlyString[i]
+  for(var i=0; i< onlyStrings.length; i++){
+    if (onlyStrings[i].length % 2 === 0){
+      newArray.push(onlyStrings[i])
     }
     return newArray
   }
 }
 
-evenNumStrs([2 ,4, 5, "what", "ok"])
+evenNumStrs([2 ,4, 5, "what", "happen"])
 /////
 //#7
 //Note: there is no test for this function
