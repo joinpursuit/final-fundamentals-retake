@@ -17,7 +17,7 @@ function sumArray (arr){
   var onlyNumbers = arr.filter(function(val){
     return typeof val === "number"
   })
-  for(var i= 0; i< onlyNumbers; i++){
+  for(var i= 0; i< onlyNumbers.length; i++){
     sum += onlyNumbers[i]
   }
   return sum
@@ -37,7 +37,7 @@ function sumFirstThree (arr){
   var sum = 0
   var slicedNums= arr.slice(0, 3)
 
-  for(var i = 0;i<slicedNums;i++){
+  for(var i = 0;i<slicedNums.length;i++){
     sum += slicedNums[i]
   }
   return sum
@@ -74,7 +74,7 @@ tripledPlusFive([1, 2, 3, 'hello', 4, 5])
 
 function secondHighest(arr){
   var sorted = arr.sort(function(a,b){
-    return a-b
+    return b-a
   })
   return sorted[1]
 }
