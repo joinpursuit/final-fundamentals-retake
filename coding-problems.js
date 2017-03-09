@@ -17,7 +17,7 @@ function sumArray (arr){
   var onlyNumbers = arr.filter(function(val){
     return typeof val === "number"
   })
-  for(var i= 0; i< onlyNumbers; i++){
+  for(var i= 0; i< onlyNumbers.length; i++){
     sum += onlyNumbers[i]
   }
   return sum
@@ -37,7 +37,7 @@ function sumFirstThree (arr){
   var sum = 0
   var slicedNums= arr.slice(0, 3)
 
-  for(var i = 0;i<slicedNums;i++){
+  for(var i = 0;i<slicedNums.length;i++){
     sum += slicedNums[i]
   }
   return sum
@@ -74,12 +74,12 @@ tripledPlusFive([1, 2, 3, 'hello', 4, 5])
 
 function secondHighest(arr){
   var sorted = arr.sort(function(a,b){
-    return a-b
+    return b-a
   })
   return sorted[1]
 }
 
-secondHighest([2,5,6,7,10]) //8
+secondHighest([2,5,6,7,10])
 /////
 //#5
 //Write a function called `indexMap` that takes in an array of numbers and returns a new array with each of the original numbers multiplied by their array index.
@@ -120,7 +120,7 @@ function evenNumStrs(arr){
   }
 }
 
-evenNumStrs([2 ,4, 5, "what", "ok"])
+evenNumStrs([2 ,4, 5, "what", "happen"])
 /////
 //#7
 //Note: there is no test for this function
